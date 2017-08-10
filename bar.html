@@ -1,0 +1,97 @@
+<!-- Styles -->
+<style>
+body { background-color:lavender;  }
+#chartdiv {
+  width   : 100%;
+  height    : 700px;
+  font-size : 11px;
+  color: black;
+}                             
+</style>
+
+<!-- Resources --><!--
+
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/themes/dark.js"></script>
+
+
+-->
+<!-- Chart code -->
+
+
+<script src="amcharts.js"></script>
+<script src="serial.js"></script>
+<script src="export.min.js"></script>
+<link rel="stylesheet" href="export.css" type="text/css" media="all" />
+<script src="dark.js"></script>
+
+<script>
+var chartData = [ {
+  "category": "Wine left in the barrel",
+  "value1": 70,
+  "value2": 30
+} ];
+
+
+var chart = AmCharts.makeChart( "chartdiv", {
+  "theme": "dark",
+  "type": "serial",
+  "depth3D": 90,
+  "angle": 30,
+  "autoMargins": true,
+  "marginBottom": 10,
+  "marginLeft": 10,
+  "marginRight": 10,
+  "dataProvider": chartData,
+  "valueAxes": [ {
+    "stackType": "100%",
+    "gridAlpha": 0
+  } ],
+  "graphs": [ {
+    "type": "column",
+    "topRadius": 1,
+    "columnWidth": 1,
+    "showOnAxis": true,
+    "lineThickness": 2,
+    "lineAlpha": 0.5,
+    "lineColor": "grey",
+    "fillColors": "lime",
+    "fillAlphas": 1,
+    "valueField": "value1"
+  }, {
+    "type": "column",
+    "topRadius": 1,
+    "columnWidth": 1,
+    "showOnAxis": true,
+    "lineThickness": 2,
+    "lineAlpha": 0.5,
+    "lineColor": "grey",
+    "fillColors": "grey",
+    "fillAlphas": 0.5,
+    "valueField": "value2"
+  } ],
+
+  "categoryField": "category",
+  "categoryAxis": {
+    "axisAlpha": 0,
+    "labelOffset": 10,
+    "gridAlpha": 0
+  },
+  "export": {
+    "enabled": true
+  }
+} );
+</script>
+    <!DOCTYPE   html>
+    <body>
+    <!-- HTML -->
+    
+    <section >
+         <div id="chartdiv" style=" position:absolute;width:400px; height:400px;"></div>
+       </section>
+      </body>
+
+      </html>  

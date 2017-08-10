@@ -1,0 +1,26 @@
+ 
+.well
+{
+	margin: 50px 50px;
+	height: 550px;
+	width: 40%;
+
+}
+html
+{
+	background-color:#9CCEC1; 
+	overflow-x:hidden; 
+}
+
+#chartdiv {
+	width		: 80%;
+	height		: 100%;
+	font-size	: 20px;
+	margin-left: 80px;
+ 
+}		
+#bin_info
+{
+	margin-left: 70px;
+	padding: 20px;
+}
