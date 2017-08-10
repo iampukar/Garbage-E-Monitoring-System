@@ -1,3 +1,3 @@
 ﻿# Project Summary
 
-[embed] http://www.ijeast.com/papers/39-43,Tesma205,IJEAST.pdf [/embed]
+Refer to the pdf-file Garbage E-Monitoring System.pdf[Garbage E-Monitoring System.pdf] for complete documentation.
